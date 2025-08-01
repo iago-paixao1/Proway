@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>TechControl 3.0 - Dashboard</title>
+  <link rel="stylesheet" href="/CSS/geral.css">
+  <script src="/JAVASCRIPT/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h2>SystemDev</h2>
+    <div class="perfil">
+      <span>Iagu</span>
+      <p>Perfil: Administrador</p>
+    </div>
+  </header>
+
+  <nav>
+    <button onclick="mostrarDashboard()">Dashboard</button>
+    <button onclick="mostrarLista()">Lista de produtos</button>
+    <button onclick="mostrarCadastro()">Cadastro de Produto</button>
+  </nav>
+
+  <main>
+    <section id="dashboard" class="painel ativo">
+      <div class="caixa">Estoque Total <span id="estoqueTotal">0</span></div>
+      <div class="caixa">Produtos Cadastrados <span id="produtosTotal">0</span></div>
+      <div class="caixa">Valor Total do Estoque <span id="valorTotal">0,00</span></div>
+    </section>
+
+    <section id="lista" class="painel">
+      <h3>Lista de Produtos</h3>
+      <table>
+        <thead>
+          <tr><th>Código</th><th>Descrição</th><th>Valor</th><th>Categoria</th><th>Estoque</th><th>Ações</th></tr>
+        </thead>
+        <tbody id="tabelaProdutos"></tbody>
+      </table>
+    </section>
+
+    <section id="cadastro" class="painel">
+      <h3>Cadastro de Produto</h3>
+      <form onsubmit="cadastrarProduto(event)">
+        <input type="text" id="descricao" placeholder="Descrição" required>
+        <input type="number" id="valor" placeholder="Valor" required>
+        <input type="text" id="categoria" placeholder="Categoria" required>
+        <input type="number" id="estoque" placeholder="Estoque Inicial" required>
+        <button type="submit">Salvar</button>
+        <button type="reset">Cancelar</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
