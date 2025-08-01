@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="/CSS/geral.css">
+</head>
+
+<body class="login-body">
+    <div class="login-container">
+        <div class="area_menu">
+            <header>
+               
+                <h2>SystemDev</h2>
+                <br>
+                    <h2>Cadastrar Novo Usuário</h2>
+                
+            </header>
+            <form onsubmit="cadastrarUsuario(event)">
+                <div class="area_formulario">
+                    <input type="text" id="novoUsuario" placeholder="Nome do Usuário" required>
+                    <input type="password" id="novaSenha" placeholder="Senha" required>
+                    <div class="botoes_form">
+                        <button type="submit">Cadastrar</button>
+                    </div>
+                    <p>Já tem uma conta? <a href="login.html">Faça login</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="area_conteudo">
+            <main>
+                <h1 class="titulo_conteudo">TechControl 3.0</h1>
+                <div class="logo_globo">
+                    <img src="../imagens/globo terrestre.png" alt="globo terrestre" class="globo">
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="../js/cadastroDeUsuario.js"></script>
+
+</html>
