@@ -1,0 +1,72 @@
+body, html {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.login-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.login-container input, .login-container button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.login-container .erro {
+  color: red;
+  font-size: 0.9em;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  background-color: #444;
+  padding: 1rem;
+  display: flex;
+  gap: 10px;
+}
+
+nav button {
+  background-color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+main {
+  padding: 1rem;
+}
+
+.caixa {
+  background-color: #e3e3e3;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.painel {
+  display: none;
+}
+
+.painel.ativo {
+  display: block;
+}
